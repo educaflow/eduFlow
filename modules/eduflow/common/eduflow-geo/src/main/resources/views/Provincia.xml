@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views https://axelor.com/xml/ns/object-views/object-views_7.4.xsd">
+
+  <grid name="grid-provincias" title="Provincias" model="com.eduflow.common.geo.db.Provincia" groups="admins,users"   >
+    <field name="idProvincia" />
+    <field name="descripcion" />
+    <field name="estado" />
+    <field name="comentario" />
+      <button name="sendByEmailBtn" title="Send Email" icon="fa-envelope"
+              onClick="accion-condicional"/>
+  </grid>
+
+  <form name="form-provincia" title="Provincia" model="com.eduflow.common.geo.db.Provincia"  groups="admins,users">
+    <panel title="Overview" >
+      <field name="idProvincia" />
+      <field name="descripcion" />
+      <field name="estado" />
+      <field name="comentario" />
+    </panel>
+  </form>
+
+
+  <grid name="grid-provincias-A" title="Provincia" model="com.eduflow.common.geo.db.Provincia"  groups="admins,users">
+      <field name="idProvincia" />
+      <field name="descripcion" />
+  </grid>
+
+  <grid name="grid-provincias-B" title="Provincia" model="com.eduflow.common.geo.db.Provincia"  groups="admins,users">
+      <field name="idProvincia" />
+      <field name="descripcion" />
+      <field name="estado" />
+  </grid>
+
+</object-views>

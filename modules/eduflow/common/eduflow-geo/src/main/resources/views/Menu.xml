@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views https://axelor.com/xml/ns/object-views/object-views_7.4.xsd">
+
+
+  <menuitem name="menu-mantenimientos" title="Provincias" groups="admins,users"/>
+
+  <menuitem name="menu-provincias" parent="menu-mantenimientos" title="Provincias" action="accion-mantenimiento-provincias" groups="admins,users"/>
+  <menuitem name="menu-provincia" parent="menu-mantenimientos" title="Provincia" action="accion-mantenimiento-provincia" groups="admins,users"/>
+  <menuitem name="menu-provincia-single" parent="menu-mantenimientos" title="Solo Grid" action="accion-listado-provincias" groups="admins,users"/>
+
+
+  <action-view name="accion-mantenimiento-provincias" title="Provincias" model="com.eduflow.common.geo.db.Provincia" >
+    <view type="grid" name="_grid-provincias"  />
+    <view type="form" name="_form-provincia"/>
+  </action-view>
+
+  <action-view name="accion-mantenimiento-provincia" title="Provincia" model="com.eduflow.common.geo.db.Provincia"  >
+    <view type="form" name="_form-provincia" />
+    <view-param name="forceEdit" value="true" />
+  </action-view>
+
+  <action-view name="accion-listado-provincias" title="Provincias" model="com.eduflow.common.geo.db.Provincia" >
+    <view type="grid" name="_grid-provincias"  />
+  </action-view>
+
+  <action-method name="accion-condicional">
+    <call class="com.eduflow.modules.geo.FlowAction" method="abrirFormularioDinamico"/>
+  </action-method>
+
+</object-views>

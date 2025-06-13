@@ -1,0 +1,12 @@
+plugins {
+    id 'com.axelor.app'
+}
+
+axelor {
+    title = "eduFlow :: Geo 2"
+}
+
+
+dependencies {
+    api project(':modules:eduflow:common:eduflow-geo')
+}
