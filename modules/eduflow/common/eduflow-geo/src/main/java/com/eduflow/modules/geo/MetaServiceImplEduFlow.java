@@ -8,29 +8,13 @@ public class MetaServiceImplEduFlow extends MetaService {
 
     @Override
     public Response findView(String model, String name, String type) {
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
+
 
         System.out.println(name);
         if (name.startsWith("_")) {
             name=name.substring(1);
         }
-        System.out.println(name);
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
-        System.out.println("________________________________");
+
 
         return super.findView(model, name, type);
     }

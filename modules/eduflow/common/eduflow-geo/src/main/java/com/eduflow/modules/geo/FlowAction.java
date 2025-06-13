@@ -27,19 +27,43 @@ public class FlowAction {
         String tipoRegistro = registroActual.getEstado();
 
         if ("A".equals(tipoRegistro)) {
-            vistaFormularioADetalle = "grid-provincias-A";
+            vistaFormularioADetalle = "form-provincia-A";
         } else if ("B".equals(tipoRegistro)) {
-            vistaFormularioADetalle = "grid-provincias-B";
+            vistaFormularioADetalle = "form-provincia-B";
         } else {
-            vistaFormularioADetalle = "grid-provincias";
+            vistaFormularioADetalle = "form-provincia";
         }
 
         response.setView(
                 ActionView.define("Hola")
-                        .model(Provincia.class.getName())
-                        .add("grid", vistaFormularioADetalle)
+                        .model("com.eduflow.common.geo.db.Provincia")
+                        .add("form", vistaFormularioADetalle)
+                        .param("forceEdit","true")
+                        .context("_showRecord", registroActual.getId())
                         .map());
 
     }
 
+    public void printA(ActionRequest request, ActionResponse response) {
+        Provincia provincia = request.getContext().asType(Provincia.class);
+        System.out.println("A");
+        System.out.println(request.getAction());
+        System.out.println(provincia.getIdProvincia());
+        System.out.println(provincia.getDescripcion());
+
+        response.setView(
+                ActionView.define("Hola")
+                        .model("com.eduflow.common.geo.db.Provincia")
+                        .add("grid","grid-provincias" )
+                        .map());
+    }
+    public void printB(ActionRequest request, ActionResponse response) {
+        System.out.println("B");
+    }
+    public void printC(ActionRequest request, ActionResponse response) {
+        System.out.println("C");
+    }
+    public void printD(ActionRequest request, ActionResponse response) {
+        System.out.println("D");
+    }
 }

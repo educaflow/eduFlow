@@ -11,11 +11,6 @@ public class GeoModule extends AxelorModule {
     protected void configure() {
         bind(ViewProcessor.class).to(ViewProcessorImpl.class);
         bind(MetaService.class).to(MetaServiceImplEduFlow.class);
-        System.out.println("++++++++++++++++++++++++++++++");
-        System.out.println("++++++++++++++++++++++++++++++");
-        System.out.println("++++++++++++++++++++++++++++++");
-        System.out.println("++++++++++++++++++++++++++++++");
-        System.out.println("++++++++++++++++++++++++++++++");
     }
 }
 
