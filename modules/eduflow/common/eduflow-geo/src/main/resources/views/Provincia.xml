@@ -9,7 +9,7 @@
         canEdit="false"
         canDelete="false"
         canSave="false"
-        action="accion-condicional"
+        action="accion-condicional" actionSignal="aaaa"
   >
       <toolbar>
           <button name="printBtn" title="Print invoices"
@@ -37,10 +37,20 @@
     <field name="idProvincia" />
     <field name="descripcion" />
     <field name="estado" />
-    <field name="comentario" />
+
   </grid>
 
-  <form name="form-provincia" title="Provincia" model="com.eduflow.common.geo.db.Provincia"  groups="admins,users" onSave="accion-listado-provincias">
+    <grid name="grid-provincias" extension="true" title="Provincias Extendido" model="com.eduflow.common.geo.db.Provincia"  id="grid-provincias-extendido">
+        <extend target="field[@name='estado']">
+            <insert position="after">
+                <field name="comentario" />
+            </insert>
+        </extend>
+
+    </grid>
+
+
+    <form name="form-provincia" title="Provincia" model="com.eduflow.common.geo.db.Provincia"  groups="admins,users" onSave="accion-listado-provincias">
     <panel title="Overview" >
       <field name="idProvincia" />
       <field name="descripcion" />
@@ -57,9 +67,9 @@
       <panel title="Overview" >
       <field name="idProvincia"  />
       <field name="descripcion" />
-          <button name="printBtn" title="Print invoices"
+          <button name="printBtn1" title="Print invoices"
                   onClick="A" icon="fa-print"/>
-          <button name="printBtn" title="Print invoices"
+          <button name="printBtn2" title="Print invoices"
                   onClick="A" icon="fa-print"/>
       </panel>
 
@@ -70,9 +80,9 @@
       <field name="idProvincia" />
       <field name="descripcion" />
       <field name="estado" />
-          <button name="printBtn" title="Print invoices"
+          <button name="printBtn3" title="Print invoices"
                   onClick="A" icon="fa-print"/>
-          <button name="printBtn" title="Print invoices"
+          <button name="printBtn4" title="Print invoices"
                   onClick="A" icon="fa-print"/>
       </panel>
   </form>

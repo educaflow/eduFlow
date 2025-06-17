@@ -12,8 +12,8 @@
 
 
   <action-view name="accion-mantenimiento-provincias" title="Provincias" model="com.eduflow.common.geo.db.Provincia" >
-    <view type="grid" name="_grid-provincias"  />
-    <view type="form" name="_form-provincia"/>
+    <view type="grid" name="grid-provincias"  />
+    <view type="form" name="form-provincia"/>
   </action-view>
 
   <action-view name="accion-mantenimiento-provincia" title="Provincia" model="com.eduflow.common.geo.db.Provincia"  >
@@ -22,7 +22,7 @@
   </action-view>
 
   <action-view name="accion-listado-provincias" title="Provincias" model="com.eduflow.common.geo.db.Provincia" >
-    <view type="grid" name="_grid-provincias"  />
+    <view type="grid" name="grid-provincias-extendido"  />
   </action-view>
 
   <action-method name="accion-condicional">

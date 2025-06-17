@@ -48,4 +48,15 @@
 
     </input>
 
+
+    <input file="TiposExpedientes.xml" root="datos">
+
+        <bind node="tiposExpedientes/tipoExpediente" type="com.eduflow.expedientes.common.db.TipoExpediente" search="self.code = :code"  create="true">
+            <bind node="@code" to="code" />
+            <bind node="@name" to="name" />
+            <bind node="@versionExpediente" to="versionExpediente" />
+
+        </bind>
+    </input>
+
 </xml-inputs>

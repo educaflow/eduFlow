@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_5.1.xsd">
+
+    <module name="profesores" package="com.eduflow.expedientes.profesores.db"/>
+    <entity name="ExpedienteComisionServicio">
+        <many-to-one name="profesor" title="Profesor" ref="com.eduflow.common.db.Profesor" />
+        <string name="objetivo" title="Objetivo"/>
+        <string name="itinerario" title="Itinerario" />
+        <datetime name="fechaHoraSalida" title="Fecha y hora de salida" />
+        <datetime name="fechaHoraLlegada" title="Fecha y hora de llegada" />
+        <decimal name="importeDietas" title="Importe total de las dietas" precision="8" scale="2" />
+        <decimal name="importeLocomocion" title="Importe total de locomoción" precision="8" scale="2" />
+        <binary name="tickets" title="PDF con los tickets" />
+    </entity>
+
+</domain-models>

@@ -21,6 +21,7 @@ public class FlowAction {
             return;
         }
 
+        System.out.println("Signal="+request.getContext().get("_signal")+"++++++++++++++++++++++");
         System.out.println("Registro actual: " + registroActual.getDescripcion());
 
         String vistaFormularioADetalle;

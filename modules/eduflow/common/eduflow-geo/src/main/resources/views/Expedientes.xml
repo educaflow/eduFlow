@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views https://raw.githubusercontent.com/educaflow/axelor-open-platform/refs/heads/master/xml/ns/object-views/object-views_7.4.xsd">
+
+
+  <menuitem name="menu-expedientes" title="Expedientes" groups="admins,users"/>
+
+  <menuitem name="menu-item-nuevo-expediente" parent="menu-expedientes" title="Nuevo Expediente" action="accion-nuevo-expediente" groups="admins,users"/>
+  <menuitem name="menu-item-expedientes-abiertos" parent="menu-expedientes" title="Expedientes Abiertos" action="accion-expedientes-abiertos" groups="admins,users"/>
+  <menuitem name="menu-item-expedientes-cerrados" parent="menu-expedientes" title="Tipos de expedientes" action="accion-expedientes-cerrados" groups="admins,users"/>
+
+
+  <action-view name="action-nuevo-expediente" title="Nuevo expediente" model="com.eduflow.common.geo.db.Provincia" >
+    <view type="grid" name="grid-tipo-expediente"  />
+  </action-view>
+  <action-view name="action-expedientes-abiertos" title="Nuevo expediente" model="com.eduflow.common.geo.db.Provincia" >
+    <view type="grid" name="grid-expediente-abierto"  />
+  </action-view>
+  <action-view name="action-expedientes-cerrados" title="Nuevo expediente" model="com.eduflow.common.geo.db.Provincia" >
+    <view type="grid" name="grid-expediente-cerrado"  />
+  </action-view>
+
+  <action-method name="action-event-new-expediente">
+    <call class="com.eduflow.modules.geo.ExpedienteController" method="initialEvent"/>
+  </action-method>
+  <action-method name="action-event-expediente">
+    <call class="com.eduflow.modules.geo.ExpedienteController" method="event"/>
+  </action-method>
+
+  <grid name="grid-tipo-expediente" title="tipos de expediente" model="com.eduflow.expedientes.common.db.TipoExpediente" groups="admins,users"
+        editable="false" edit-icon="false" x-selector="none" canNew="false"  canEdit="false"  canDelete="false" canSave="false"
+        action="action-event-new-expediente" actionSignal="aaaa"
+  >
+    <field name="code" />
+    <field name="name" />
+    <field name="versionExpediente" />
+    <field name="openDate" />
+    <field name="closeDate" />
+    <field name="fqcnEventManager" />
+
+  </grid>
+
+
+  <form name="form-expediente-falta-justificada-datos-iniciales" title="Datos Iniciales" model="com.eduflow.expedientes.common.db.Expediente" groups="admins,users" onSave="action-event-new-expediente">
+    <panel title="Datos Iniciales">
+      <field name="tipoExpediente" />
+      <field name="name" />
+      <field name="codeState" />
+      <field name="nameState" />
+      <field name="profesor" />
+      <field name="fechaFalta" />
+      <field name="motivo" />
+      <field name="jutificante" />
+
+      <button name="eventPresentarDatos" title="Pesentar Datos" onClick="action-event-expediente" />
+    </panel>
+
+
+  </form>
+
+
+  <form name="form-expediente-falta-justificada-pendiente-aprobacion" title="Pendiente Aprobación" model="com.eduflow.expedientes.common.db.Expediente"  groups="admins,users" onSave="accion-listado-provincias">
+    <panel title="Datos Iniciales">
+      <field name="tipoExpediente" />
+      <field name="name" />
+      <field name="codeState" />
+      <field name="nameState" />
+      <field name="profesor" />
+      <field name="fechaFalta" />
+      <field name="motivo" />
+      <field name="jutificante" />
+    </panel>
+
+
+
+  </form>
+
+
+</object-views>

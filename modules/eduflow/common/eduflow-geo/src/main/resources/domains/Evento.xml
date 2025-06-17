@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_5.1.xsd">
+
+    <module name="common" package="com.eduflow.expedientes.common.db"/>
+    <entity name="Evento">
+        <many-to-one name="expediente" title="Expediente" ref="com.eduflow.expedientes.common.db.Expediente" />
+        <string name="evento" />
+        <datetime name="fecha" />
+        <many-to-one name="profesor" title="Profesor" ref="com.eduflow.common.db.Profesor" />
+        <string name="estadoOrigen" />
+        <string name="estadoDestino" />
+    </entity>
+
+</domain-models>
