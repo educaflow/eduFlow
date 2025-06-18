@@ -1,4 +1,4 @@
-package com.eduflow.modules.geo;
+package com.eduflow.modules.expedientes;
 
 public class ComisionServicioEventManager {
 }

@@ -22,10 +22,10 @@
   </action-view>
 
   <action-method name="action-event-new-expediente">
-    <call class="com.eduflow.modules.geo.ExpedienteController" method="initialEvent"/>
+    <call class="com.eduflow.modules.expedientes.common.ExpedienteController" method="initialEvent"/>
   </action-method>
   <action-method name="action-event-expediente">
-    <call class="com.eduflow.modules.geo.ExpedienteController" method="event"/>
+    <call class="com.eduflow.modules.expedientes.common.ExpedienteController" method="event"/>
   </action-method>
 
   <grid name="grid-tipo-expediente" title="tipos de expediente" model="com.eduflow.expedientes.common.db.TipoExpediente" groups="admins,users"

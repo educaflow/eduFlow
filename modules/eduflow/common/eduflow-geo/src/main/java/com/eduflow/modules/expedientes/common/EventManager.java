@@ -1,6 +1,7 @@
-package com.eduflow.modules.geo;
+package com.eduflow.modules.expedientes.common;
 
 import com.axelor.auth.db.AuditableModel;
+import com.axelor.db.Model;
 import com.axelor.meta.schema.actions.ActionView;
 import com.axelor.rpc.ActionRequest;
 import com.axelor.rpc.ActionResponse;
@@ -8,7 +9,7 @@ import com.axelor.rpc.ActionResponse;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
-public interface EventManager<T extends AuditableModel> {
+public interface EventManager<T extends Model> {
 
     public void initialEvent(ActionRequest request, ActionResponse response);
 
@@ -27,13 +28,5 @@ public interface EventManager<T extends AuditableModel> {
         return (T) request.getContext().asType(clazz);
     };
 
-    default void returnView (ActionResponse response,AuditableModel entity,String viewName) {
-        response.setView(
-                ActionView.define(entity.getClass().getSimpleName())
-                        .model(entity.getClass().getName())
-                        .add("form", viewName)
-                        .param("forceEdit", "true")
-                        .context("_showRecord", entity.getId())
-                        .map());
-    }
+
 }

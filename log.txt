@@ -1,0 +1,593 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :modules:eduflow:common:eduflow-geo:generateCode UP-TO-DATE
+> Task :generateCode UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :copyWebapp UP-TO-DATE
+> Task :modules:eduflow:common:eduflow-geo:compileJava UP-TO-DATE
+> Task :modules:eduflow:common:eduflow-geo:processResources UP-TO-DATE
+> Task :modules:eduflow:common:eduflow-geo:classes UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :modules:eduflow:common:eduflow-geo:jar UP-TO-DATE
+> Task :runnerConfig
+
+> Task :run
+2025-06-18 00:47:50.637 DEBUG 158451 --- [           main] com.axelor.db.JpaModule                  : Configuring database...
+2025-06-18 00:47:50.685  INFO 158451 --- [           main] com.axelor.db.JpaModule                  : JCache provider: com.github.benmanes.caffeine.jcache.spi.CaffeineCachingProvider
+2025-06-18 00:47:50.717 DEBUG 158451 --- [           main] com.axelor.web.openapi.OpenApiModule     : Configuring OpenAPI...
+2025-06-18 00:47:51.072 DEBUG 158451 --- [           main] o.a.c.b.converters.BooleanConverter      : Setting default value: false
+2025-06-18 00:47:51.072 DEBUG 158451 --- [           main] o.a.c.b.converters.BooleanConverter      : Converting 'Boolean' value 'false' to type 'Boolean'
+2025-06-18 00:47:51.073 DEBUG 158451 --- [           main] o.a.c.b.converters.BooleanConverter      :     No conversion required, value is already a Boolean
+2025-06-18 00:47:51.074 DEBUG 158451 --- [           main] o.a.c.b.converters.ByteConverter         : Setting default value: 0
+2025-06-18 00:47:51.074 DEBUG 158451 --- [           main] o.a.c.b.converters.ByteConverter         : Converting 'Integer' value '0' to type 'Byte'
+2025-06-18 00:47:51.074 DEBUG 158451 --- [           main] o.a.c.b.converters.ByteConverter         :     Converted to Byte value '0'
+2025-06-18 00:47:51.075 DEBUG 158451 --- [           main] o.a.c.b.converters.CharacterConverter    : Setting default value:  
+2025-06-18 00:47:51.075 DEBUG 158451 --- [           main] o.a.c.b.converters.CharacterConverter    : Converting 'Character' value ' ' to type 'Character'
+2025-06-18 00:47:51.075 DEBUG 158451 --- [           main] o.a.c.b.converters.CharacterConverter    :     No conversion required, value is already a Character
+2025-06-18 00:47:51.075 DEBUG 158451 --- [           main] o.a.c.b.converters.DoubleConverter       : Setting default value: 0
+2025-06-18 00:47:51.075 DEBUG 158451 --- [           main] o.a.c.b.converters.DoubleConverter       : Converting 'Integer' value '0' to type 'Double'
+2025-06-18 00:47:51.075 DEBUG 158451 --- [           main] o.a.c.b.converters.DoubleConverter       :     Converted to Double value '0.0'
+2025-06-18 00:47:51.076 DEBUG 158451 --- [           main] o.a.c.b.converters.FloatConverter        : Setting default value: 0
+2025-06-18 00:47:51.076 DEBUG 158451 --- [           main] o.a.c.b.converters.FloatConverter        : Converting 'Integer' value '0' to type 'Float'
+2025-06-18 00:47:51.076 DEBUG 158451 --- [           main] o.a.c.b.converters.FloatConverter        :     Converted to Float value '0.0'
+2025-06-18 00:47:51.076 DEBUG 158451 --- [           main] o.a.c.b.converters.IntegerConverter      : Setting default value: 0
+2025-06-18 00:47:51.076 DEBUG 158451 --- [           main] o.a.c.b.converters.IntegerConverter      : Converting 'Integer' value '0' to type 'Integer'
+2025-06-18 00:47:51.076 DEBUG 158451 --- [           main] o.a.c.b.converters.IntegerConverter      :     No conversion required, value is already a Integer
+2025-06-18 00:47:51.077 DEBUG 158451 --- [           main] o.a.c.b.converters.LongConverter         : Setting default value: 0
+2025-06-18 00:47:51.077 DEBUG 158451 --- [           main] o.a.c.b.converters.LongConverter         : Converting 'Integer' value '0' to type 'Long'
+2025-06-18 00:47:51.077 DEBUG 158451 --- [           main] o.a.c.b.converters.LongConverter         :     Converted to Long value '0'
+2025-06-18 00:47:51.077 DEBUG 158451 --- [           main] o.a.c.b.converters.ShortConverter        : Setting default value: 0
+2025-06-18 00:47:51.077 DEBUG 158451 --- [           main] o.a.c.b.converters.ShortConverter        : Converting 'Integer' value '0' to type 'Short'
+2025-06-18 00:47:51.077 DEBUG 158451 --- [           main] o.a.c.b.converters.ShortConverter        :     Converted to Short value '0'
+2025-06-18 00:47:51.078 DEBUG 158451 --- [           main] o.a.c.b.converters.BigDecimalConverter   : Setting default value: 0.0
+2025-06-18 00:47:51.078 DEBUG 158451 --- [           main] o.a.c.b.converters.BigDecimalConverter   : Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+2025-06-18 00:47:51.078 DEBUG 158451 --- [           main] o.a.c.b.converters.BigDecimalConverter   :     No conversion required, value is already a BigDecimal
+2025-06-18 00:47:51.078 DEBUG 158451 --- [           main] o.a.c.b.converters.BigIntegerConverter   : Setting default value: 0
+2025-06-18 00:47:51.078 DEBUG 158451 --- [           main] o.a.c.b.converters.BigIntegerConverter   : Converting 'BigInteger' value '0' to type 'BigInteger'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.BigIntegerConverter   :     No conversion required, value is already a BigInteger
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.BooleanConverter      : Setting default value: false
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.BooleanConverter      : Converting 'Boolean' value 'false' to type 'Boolean'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.BooleanConverter      :     No conversion required, value is already a Boolean
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.ByteConverter         : Setting default value: 0
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.ByteConverter         : Converting 'Integer' value '0' to type 'Byte'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.ByteConverter         :     Converted to Byte value '0'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.CharacterConverter    : Setting default value:  
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.CharacterConverter    : Converting 'Character' value ' ' to type 'Character'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.CharacterConverter    :     No conversion required, value is already a Character
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.DoubleConverter       : Setting default value: 0
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.DoubleConverter       : Converting 'Integer' value '0' to type 'Double'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.DoubleConverter       :     Converted to Double value '0.0'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.FloatConverter        : Setting default value: 0
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.FloatConverter        : Converting 'Integer' value '0' to type 'Float'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.FloatConverter        :     Converted to Float value '0.0'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.IntegerConverter      : Setting default value: 0
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.IntegerConverter      : Converting 'Integer' value '0' to type 'Integer'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.IntegerConverter      :     No conversion required, value is already a Integer
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.LongConverter         : Setting default value: 0
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.LongConverter         : Converting 'Integer' value '0' to type 'Long'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.LongConverter         :     Converted to Long value '0'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.ShortConverter        : Setting default value: 0
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.ShortConverter        : Converting 'Integer' value '0' to type 'Short'
+2025-06-18 00:47:51.079 DEBUG 158451 --- [           main] o.a.c.b.converters.ShortConverter        :     Converted to Short value '0'
+2025-06-18 00:47:51.080 DEBUG 158451 --- [           main] o.a.c.b.converters.StringConverter       : Setting default value: 
+2025-06-18 00:47:51.080 DEBUG 158451 --- [           main] o.a.c.b.converters.StringConverter       : Converting 'String' value '' to type 'String'
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Z@40d76d42
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'boolean[]' value '[Z@40d76d42' to type 'boolean[]'
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a boolean[]
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [B@79f63531
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'byte[]' value '[B@79f63531' to type 'byte[]'
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a byte[]
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [C@7fce382e
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'char[]' value '[C@7fce382e' to type 'char[]'
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a char[]
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [D@73e6ad36
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'double[]' value '[D@73e6ad36' to type 'double[]'
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a double[]
+2025-06-18 00:47:51.084 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [F@8207375
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'float[]' value '[F@8207375' to type 'float[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a float[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [I@403780fd
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'int[]' value '[I@403780fd' to type 'int[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a int[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [J@4eb6df9d
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'long[]' value '[J@4eb6df9d' to type 'long[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a long[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [S@8ff4460
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'short[]' value '[S@8ff4460' to type 'short[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a short[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.math.BigDecimal;@3cf35d1
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@3cf35d1' to type 'BigDecimal[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a BigDecimal[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.math.BigInteger;@7311f67
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@7311f67' to type 'BigInteger[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a BigInteger[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.Boolean;@f84557a
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Boolean[]' value '[Ljava.lang.Boolean;@f84557a' to type 'Boolean[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Boolean[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.Byte;@64cfdb13
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Byte[]' value '[Ljava.lang.Byte;@64cfdb13' to type 'Byte[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Byte[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.Character;@4066edd3
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Character[]' value '[Ljava.lang.Character;@4066edd3' to type 'Character[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Character[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.Double;@60024657
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Double[]' value '[Ljava.lang.Double;@60024657' to type 'Double[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Double[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.Float;@5882c844
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Float[]' value '[Ljava.lang.Float;@5882c844' to type 'Float[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Float[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.Integer;@28a74e4a
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Integer[]' value '[Ljava.lang.Integer;@28a74e4a' to type 'Integer[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Integer[]
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.Long;@2416dbe4
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Long[]' value '[Ljava.lang.Long;@2416dbe4' to type 'Long[]'
+2025-06-18 00:47:51.085 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Long[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.Short;@401fd5a5
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Short[]' value '[Ljava.lang.Short;@401fd5a5' to type 'Short[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Short[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.String;@7f81bcbf
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'String[]' value '[Ljava.lang.String;@7f81bcbf' to type 'String[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a String[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.lang.Class;@6d6e1ab1
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Class[]' value '[Ljava.lang.Class;@6d6e1ab1' to type 'Class[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Class[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.util.Date;@6a19cbe8
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Date[]' value '[Ljava.util.Date;@6a19cbe8' to type 'Date[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Date[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.util.Calendar;@5a9cc72
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'Calendar[]' value '[Ljava.util.Calendar;@5a9cc72' to type 'Calendar[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a Calendar[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.io.File;@60aa5101
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'java.io.File[]' value '[Ljava.io.File;@60aa5101' to type 'java.io.File[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a java.io.File[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.sql.Date;@4cf110e2
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@4cf110e2' to type 'java.sql.Date[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a java.sql.Date[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.sql.Time;@7e0ec810
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@7e0ec810' to type 'java.sql.Time[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a java.sql.Time[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.sql.Timestamp;@397e79be
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@397e79be' to type 'java.sql.Timestamp[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a java.sql.Timestamp[]
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Setting default value: [Ljava.net.URL;@8494261
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        : Converting 'java.net.URL[]' value '[Ljava.net.URL;@8494261' to type 'java.net.URL[]'
+2025-06-18 00:47:51.086 DEBUG 158451 --- [           main] o.a.c.b.converters.ArrayConverter        :     No conversion required, value is already a java.net.URL[]
+2025-06-18 00:47:51.280  INFO 158451 --- [           main] com.axelor.app.AppModule                 : Versión personalizada para educaFlow
+2025-06-18 00:47:51.281  INFO 158451 --- [           main] com.axelor.app.AppModule                 : Configuring app modules...
+2025-06-18 00:47:51.281 DEBUG 158451 --- [           main] com.axelor.app.AppModule                 : Configure module: com.eduflow.modules.geo.GeoModule
+2025-06-18 00:47:51.327  INFO 158451 --- [           main] com.axelor.app.AppModule                 : View processors: ViewProcessorImpl
+2025-06-18 00:47:51.721  INFO 158451 --- [           main] c.axelor.web.socket.WebSocketEndpoint    : Registering channel: tags
+2025-06-18 00:47:51.755  INFO 158451 --- [           main] c.axelor.auth.pac4j.ClientListService    : Indirect clients: [AxelorFormClient]
+2025-06-18 00:47:51.939 DEBUG 158451 --- [           main] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2025-06-18 00:47:51.939 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+2025-06-18 00:47:51.944 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002330: Unable to retrieve config: expandEntityReferences defaults to false
+2025-06-18 00:47:51.944 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002335: Unable to retrieve config: enableSecureProcessingFeature defaults to true
+2025-06-18 00:47:51.944 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002325: Unable to retrieve config: disableDTDs defaults to true
+2025-06-18 00:47:51.945 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+2025-06-18 00:47:51.945 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002330: Unable to retrieve config: expandEntityReferences defaults to false
+2025-06-18 00:47:51.945 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002335: Unable to retrieve config: enableSecureProcessingFeature defaults to true
+2025-06-18 00:47:51.945 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002325: Unable to retrieve config: disableDTDs defaults to true
+2025-06-18 00:47:51.945 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+2025-06-18 00:47:51.945 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002330: Unable to retrieve config: expandEntityReferences defaults to false
+2025-06-18 00:47:51.946 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002335: Unable to retrieve config: enableSecureProcessingFeature defaults to true
+2025-06-18 00:47:51.946 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002325: Unable to retrieve config: disableDTDs defaults to true
+2025-06-18 00:47:51.946 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.DocumentProvider,  Method : DocumentProvider
+2025-06-18 00:47:51.946 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002330: Unable to retrieve config: expandEntityReferences defaults to false
+2025-06-18 00:47:51.946 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002335: Unable to retrieve config: enableSecureProcessingFeature defaults to true
+2025-06-18 00:47:51.946 DEBUG 158451 --- [           main] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002325: Unable to retrieve config: disableDTDs defaults to true
+2025-06-18 00:47:51.978  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011025: registering provider instance for com.axelor.web.ObjectMapperResolver
+2025-06-18 00:47:51.998  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011025: registering provider instance for com.axelor.rpc.RequestFilter
+2025-06-18 00:47:51.999  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011025: registering provider instance for com.axelor.web.service.InputPartFilter
+2025-06-18 00:47:51.999  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for io.swagger.v3.jaxrs2.integration.resources.AcceptHeaderOpenApiResource
+2025-06-18 00:47:52.020  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for io.swagger.v3.jaxrs2.integration.resources.OpenApiResource
+2025-06-18 00:47:52.024  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.SearchService
+2025-06-18 00:47:52.028  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.InfoResource
+2025-06-18 00:47:52.029  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.ViewService
+2025-06-18 00:47:52.033  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.MessageService
+2025-06-18 00:47:52.036  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.ActionService
+2025-06-18 00:47:52.037  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.FileService
+2025-06-18 00:47:52.040  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.RestService
+2025-06-18 00:47:52.048  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.PasswordResetResource
+2025-06-18 00:47:52.049  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.AboutService
+2025-06-18 00:47:52.050  INFO 158451 --- [           main] org.jboss.resteasy.plugins.guice.i18n    : RESTEASY011020: registering factory for com.axelor.web.service.DmsService
+2025-06-18 00:47:52.521 DEBUG 158451 --- [pool-3-thread-1] com.axelor.db.JpaScanner                 : Searching for entity classes...
+2025-06-18 00:47:52.521 DEBUG 158451 --- [pool-3-thread-2] com.axelor.db.JpaScanner                 : Searching for repository classes...
+2025-06-18 00:47:52.521 DEBUG 158451 --- [pool-3-thread-3] com.axelor.db.JpaScanner                 : Searching for value enum classes...
+2025-06-18 00:47:52.563 DEBUG 158451 --- [pool-3-thread-3] com.axelor.db.JpaScanner                 : Value enum classes found: 3
+2025-06-18 00:47:52.569 DEBUG 158451 --- [pool-3-thread-2] com.axelor.db.JpaScanner                 : Repository classes found: 50
+2025-06-18 00:47:53.255 DEBUG 158451 --- [pool-3-thread-1] com.axelor.db.JpaScanner                 : Entity classes found: 51
+2025-06-18 00:47:53.288 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : Driver class org.postgresql.Driver found in Thread context class loader ParallelWebappClassLoader
+  context: eduFlow
+  delegate: false
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@446cdf90
+
+2025-06-18 00:47:53.293 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : autoCommit......................false
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : driverClassName................."org.postgresql.Driver"
+2025-06-18 00:47:53.295 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................300000
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:postgresql://localhost:5432/eduflow
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................5
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : username........................"eduflow"
+2025-06-18 00:47:53.296 DEBUG 158451 --- [           main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2025-06-18 00:47:53.297  INFO 158451 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-18 00:47:53.408 DEBUG 158451 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@568ff30
+2025-06-18 00:47:53.409  INFO 158451 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-18 00:47:53.434  INFO 158451 --- [           main] c.a.d.h.dialect.CustomDialectResolver    : Database engine: PostgreSQL 12.22
+2025-06-18 00:47:53.434 DEBUG 158451 --- [           main] c.a.d.h.dialect.CustomDialectResolver    : Database dialect: com.axelor.db.hibernate.dialect.AxelorPostgreSQL10Dialect
+2025-06-18 00:47:53.458 DEBUG 158451 --- [           main] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:47:53.509 DEBUG 158451 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+2025-06-18 00:47:53.510 DEBUG 158451 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+2025-06-18 00:47:53.515 DEBUG 158451 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3428aaff
+2025-06-18 00:47:53.519 DEBUG 158451 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3aef420a
+2025-06-18 00:47:53.522 DEBUG 158451 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ed0c18f
+2025-06-18 00:47:53.526 DEBUG 158451 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bd24831
+2025-06-18 00:47:53.526 DEBUG 158451 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2025-06-18 00:47:55.547  INFO 158451 --- [           main] com.axelor.web.AppStartup                : Initializing...
+2025-06-18 00:47:55.889  INFO 158451 --- [           main] com.axelor.meta.loader.ModuleManager     : Loading package axelor-core...
+2025-06-18 00:47:55.889  INFO 158451 --- [           main] com.axelor.meta.loader.ModuleManager     : Loading package axelor-web...
+2025-06-18 00:47:55.889  INFO 158451 --- [           main] com.axelor.meta.loader.ModuleManager     : Loading package eduflow-geo...
+2025-06-18 00:47:55.889  INFO 158451 --- [           main] com.axelor.meta.loader.ModuleManager     : Loading package eduFlow...
+2025-06-18 00:47:55.902 DEBUG 158451 --- [           main] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:47:55.904  INFO 158451 --- [           main] com.axelor.meta.loader.ViewLoader        : Generating computed views...
+2025-06-18 00:47:55.936 DEBUG 158451 --- [           main] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:47:55.974 DEBUG 158451 --- [pool-4-thread-1] c.a.meta.loader.ComputedViewProcessor    : No extends views found for grid-provincias: remove existing computed views.
+2025-06-18 00:47:55.985  INFO 158451 --- [           main] com.axelor.web.AppStartup                : Ready to serve...
+
+Running at http://localhost:8080/eduFlow
+
+2025-06-18 00:48:23.510 DEBUG 158451 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
+2025-06-18 00:48:23.510 DEBUG 158451 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
+2025-06-18 00:48:24.091 DEBUG 158451 --- [nio-8080-exec-1] o.p.c.c.f.DefaultSecurityClientFinder    : Provided clientNames: AxelorFormClient
+2025-06-18 00:48:24.093 DEBUG 158451 --- [nio-8080-exec-1] o.p.c.c.f.DefaultSecurityClientFinder    : clientNameOnRequest: Optional.empty
+2025-06-18 00:48:24.093 DEBUG 158451 --- [nio-8080-exec-1] o.pac4j.core.util.InitializableObject    : Initializing: Clients (nb: 0, last: null)
+2025-06-18 00:48:24.093 DEBUG 158451 --- [nio-8080-exec-1] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: null | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: null | extractor: null | authenticator: null | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:24.093 DEBUG 158451 --- [nio-8080-exec-1] o.p.c.c.f.DefaultSecurityClientFinder    : result: [AxelorFormClient]
+2025-06-18 00:48:24.094 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: null
+2025-06-18 00:48:24.094 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Can't get value for key: pac4jCsrfToken, no session available
+2025-06-18 00:48:24.094 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: null
+2025-06-18 00:48:24.094 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Can't get value for key: pac4jCsrfToken, no session available
+2025-06-18 00:48:24.096 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: true, retrieved session: org.apache.catalina.session.StandardSessionFacade@3b7d7bb4
+2025-06-18 00:48:24.096 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Set key: pac4jCsrfToken for value: 25c2928eef574c21892c11bece263d80
+2025-06-18 00:48:24.098 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@3b7d7bb4
+2025-06-18 00:48:24.098 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Get value: null for key: pac4jUserProfiles
+2025-06-18 00:48:24.099 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: true, retrieved session: org.apache.catalina.session.StandardSessionFacade@3b7d7bb4
+2025-06-18 00:48:24.099 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Set key: pac4jRequestedUrl for value: http://localhost:8080/eduFlow/websocket
+2025-06-18 00:48:24.099 DEBUG 158451 --- [nio-8080-exec-1] o.pac4j.core.util.InitializableObject    : Initializing: AxelorFormClient (nb: 0, last: null)
+2025-06-18 00:48:24.103 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@3b7d7bb4
+2025-06-18 00:48:24.103 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Get value: null for key: AxelorFormClient$attemptedAuthentication
+2025-06-18 00:48:25.159 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /public/app/icon
+2025-06-18 00:48:25.253 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:25.253 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.InputStreamProvider
+2025-06-18 00:48:25.253 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.InputStreamProvider
+2025-06-18 00:48:25.255 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:25.255 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:25.255 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:25.255 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:25.255 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:25.255 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.InputStreamProvider
+2025-06-18 00:48:25.256 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.InputStreamProvider,  Method : writeTo
+2025-06-18 00:48:25.306 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /public/app/info
+2025-06-18 00:48:25.306 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /public/app/theme
+2025-06-18 00:48:25.311 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:25.319 DEBUG 158451 --- [io-8080-exec-10] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:25.327 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2025-06-18 00:48:25.379 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /public/app/sign-in/logo
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.InputStreamProvider
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.InputStreamProvider
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.InputStreamProvider
+2025-06-18 00:48:25.381 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.InputStreamProvider,  Method : writeTo
+2025-06-18 00:48:28.751 DEBUG 158451 --- [nio-8080-exec-4] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: /index.html | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: org.pac4j.http.client.indirect.FormClient$$Lambda$696/0x0000000800c6a840@4bdce986 | extractor: com.axelor.auth.pac4j.local.JsonExtractor@18ee4a1e | authenticator: com.axelor.auth.pac4j.local.AxelorAuthenticator@3f01c1dd | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:28.761 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:28.890 DEBUG 158451 --- [nio-8080-exec-4] org.pac4j.core.profile.CommonProfile     : adding => key: username / value: demo / class java.lang.String
+2025-06-18 00:48:28.890 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: null
+2025-06-18 00:48:28.890 DEBUG 158451 --- [nio-8080-exec-4] org.pac4j.core.profile.ProfileManager    : Saving profiles (session): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:28.891 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : createSession: true, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:28.891 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : Set key: pac4jUserProfiles for value: {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:28.891 DEBUG 158451 --- [nio-8080-exec-4] org.pac4j.core.profile.ProfileManager    : Saving profiles (request): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:28.894 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:28.897 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:28.899 DEBUG 158451 --- [nio-8080-exec-4] o.a.shiro.realm.AuthenticatingRealm      : Looked up AuthenticationInfo [demo] from doGetAuthenticationInfo
+2025-06-18 00:48:28.899 DEBUG 158451 --- [nio-8080-exec-4] o.a.shiro.realm.AuthenticatingRealm      : AuthenticationInfo caching is disabled for info [demo].  Submitted token: [io.buji.pac4j.token.Pac4jToken@41219235].
+2025-06-18 00:48:28.899 DEBUG 158451 --- [nio-8080-exec-4] o.a.s.a.c.SimpleCredentialsMatcher       : Performing credentials equality check for tokenCredentials of type [java.lang.Integer and accountCredentials of type [java.lang.Integer]
+2025-06-18 00:48:28.899 DEBUG 158451 --- [nio-8080-exec-4] o.a.shiro.authc.AbstractAuthenticator    : Authentication successful for token [io.buji.pac4j.token.Pac4jToken@41219235].  Returned account [demo]
+2025-06-18 00:48:28.903 DEBUG 158451 --- [nio-8080-exec-4] o.a.shiro.mgt.DefaultSecurityManager     : Context already contains a session.  Returning.
+2025-06-18 00:48:28.903 DEBUG 158451 --- [nio-8080-exec-4] o.apache.shiro.web.servlet.SimpleCookie  : Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/eduFlow; Max-Age=0; Expires=Mon, 16-Jun-2025 22:48:28 GMT; SameSite=lax]
+2025-06-18 00:48:28.903 DEBUG 158451 --- [nio-8080-exec-4] o.a.shiro.mgt.AbstractRememberMeManager  : AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+2025-06-18 00:48:28.903 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:28.903 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : Get value: null for key: pac4jCsrfToken
+2025-06-18 00:48:28.904 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:28.904 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : Get value: null for key: pac4jCsrfToken
+2025-06-18 00:48:28.904 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : createSession: true, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:28.904 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : Set key: pac4jCsrfToken for value: 39f074413d874ada99917cdb6a71e116
+2025-06-18 00:48:28.911 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /public/app/info
+2025-06-18 00:48:28.918 DEBUG 158451 --- [nio-8080-exec-8] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:28.919 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2025-06-18 00:48:28.944 DEBUG 158451 --- [nio-8080-exec-6] o.p.c.c.f.DefaultSecurityClientFinder    : Provided clientNames: AxelorFormClient
+2025-06-18 00:48:28.944 DEBUG 158451 --- [nio-8080-exec-6] o.p.c.c.f.DefaultSecurityClientFinder    : clientNameOnRequest: Optional.empty
+2025-06-18 00:48:28.944 DEBUG 158451 --- [nio-8080-exec-6] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: /index.html | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: org.pac4j.http.client.indirect.FormClient$$Lambda$696/0x0000000800c6a840@4bdce986 | extractor: com.axelor.auth.pac4j.local.JsonExtractor@18ee4a1e | authenticator: com.axelor.auth.pac4j.local.AxelorAuthenticator@3f01c1dd | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:28.944 DEBUG 158451 --- [nio-8080-exec-6] o.p.c.c.f.DefaultSecurityClientFinder    : result: [AxelorFormClient]
+2025-06-18 00:48:28.944 DEBUG 158451 --- [nio-8080-exec-6] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:28.944 DEBUG 158451 --- [nio-8080-exec-6] o.p.jee.context.session.JEESessionStore  : Get value: {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |} for key: pac4jUserProfiles
+2025-06-18 00:48:28.945 DEBUG 158451 --- [nio-8080-exec-6] org.pac4j.core.profile.ProfileManager    : Retrieved profiles (session): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:28.948 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /action/menu/all
+2025-06-18 00:48:29.007 DEBUG 158451 --- [nio-8080-exec-6] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.021 DEBUG 158451 --- [nio-8080-exec-6] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.022 DEBUG 158451 --- [nio-8080-exec-6] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.024 DEBUG 158451 --- [nio-8080-exec-6] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.027 DEBUG 158451 --- [nio-8080-exec-6] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.031 DEBUG 158451 --- [nio-8080-exec-6] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2025-06-18 00:48:29.066 DEBUG 158451 --- [nio-8080-exec-9] o.p.c.c.f.DefaultSecurityClientFinder    : Provided clientNames: AxelorFormClient
+2025-06-18 00:48:29.066 DEBUG 158451 --- [nio-8080-exec-1] o.p.c.c.f.DefaultSecurityClientFinder    : Provided clientNames: AxelorFormClient
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-1] o.p.c.c.f.DefaultSecurityClientFinder    : clientNameOnRequest: Optional.empty
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] o.p.c.c.f.DefaultSecurityClientFinder    : clientNameOnRequest: Optional.empty
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: /index.html | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: org.pac4j.http.client.indirect.FormClient$$Lambda$696/0x0000000800c6a840@4bdce986 | extractor: com.axelor.auth.pac4j.local.JsonExtractor@18ee4a1e | authenticator: com.axelor.auth.pac4j.local.AxelorAuthenticator@3f01c1dd | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-1] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: /index.html | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: org.pac4j.http.client.indirect.FormClient$$Lambda$696/0x0000000800c6a840@4bdce986 | extractor: com.axelor.auth.pac4j.local.JsonExtractor@18ee4a1e | authenticator: com.axelor.auth.pac4j.local.AxelorAuthenticator@3f01c1dd | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] o.p.c.c.f.DefaultSecurityClientFinder    : result: [AxelorFormClient]
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-1] o.p.c.c.f.DefaultSecurityClientFinder    : result: [AxelorFormClient]
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Get value: 39f074413d874ada99917cdb6a71e116 for key: pac4jCsrfToken
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] o.p.jee.context.session.JEESessionStore  : Get value: 39f074413d874ada99917cdb6a71e116 for key: pac4jCsrfToken
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Get value: {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |} for key: pac4jUserProfiles
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] o.p.jee.context.session.JEESessionStore  : Get value: {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |} for key: pac4jUserProfiles
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-1] org.pac4j.core.profile.ProfileManager    : Retrieved profiles (session): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] org.pac4j.core.profile.ProfileManager    : Retrieved profiles (session): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.067 DEBUG 158451 --- [nio-8080-exec-9] o.p.jee.context.session.JEESessionStore  : Get value: 39f074413d874ada99917cdb6a71e116 for key: pac4jCsrfToken
+2025-06-18 00:48:29.069 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /action/accion-mantenimiento-provincias
+2025-06-18 00:48:29.070 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerReaderInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.070 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyReader: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.070 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyReader: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.070 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : readFrom
+2025-06-18 00:48:29.071 DEBUG 158451 --- [nio-8080-exec-2] o.p.c.c.f.DefaultSecurityClientFinder    : Provided clientNames: AxelorFormClient
+2025-06-18 00:48:29.072 DEBUG 158451 --- [nio-8080-exec-2] o.p.c.c.f.DefaultSecurityClientFinder    : clientNameOnRequest: Optional.empty
+2025-06-18 00:48:29.072 DEBUG 158451 --- [nio-8080-exec-2] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: /index.html | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: org.pac4j.http.client.indirect.FormClient$$Lambda$696/0x0000000800c6a840@4bdce986 | extractor: com.axelor.auth.pac4j.local.JsonExtractor@18ee4a1e | authenticator: com.axelor.auth.pac4j.local.AxelorAuthenticator@3f01c1dd | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:29.072 DEBUG 158451 --- [nio-8080-exec-2] o.p.c.c.f.DefaultSecurityClientFinder    : result: [AxelorFormClient]
+2025-06-18 00:48:29.072 DEBUG 158451 --- [nio-8080-exec-2] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.072 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /public/app/logo
+2025-06-18 00:48:29.072 DEBUG 158451 --- [nio-8080-exec-2] o.p.jee.context.session.JEESessionStore  : Get value: {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |} for key: pac4jUserProfiles
+2025-06-18 00:48:29.072 DEBUG 158451 --- [nio-8080-exec-2] org.pac4j.core.profile.ProfileManager    : Retrieved profiles (session): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.InputStreamProvider
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.InputStreamProvider
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.InputStreamProvider
+2025-06-18 00:48:29.073 DEBUG 158451 --- [io-8080-exec-10] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.InputStreamProvider,  Method : writeTo
+2025-06-18 00:48:29.074 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /action/menu/quick
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.077 DEBUG 158451 --- [nio-8080-exec-2] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2025-06-18 00:48:29.113 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.119 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.126 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.131 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.702 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.723 DEBUG 158451 --- [nio-8080-exec-9] c.a.meta.schema.actions.ActionGroup      : action: accion-mantenimiento-provincias
+2025-06-18 00:48:29.726 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.727 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.727 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.729 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.730 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.732 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.772 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.772 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.772 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.773 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.773 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.773 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:29.773 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.773 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.773 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.773 DEBUG 158451 --- [nio-8080-exec-9] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-4] o.p.c.c.f.DefaultSecurityClientFinder    : Provided clientNames: AxelorFormClient
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-3] o.p.c.c.f.DefaultSecurityClientFinder    : Provided clientNames: AxelorFormClient
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-4] o.p.c.c.f.DefaultSecurityClientFinder    : clientNameOnRequest: Optional.empty
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-3] o.p.c.c.f.DefaultSecurityClientFinder    : clientNameOnRequest: Optional.empty
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-4] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: /index.html | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: org.pac4j.http.client.indirect.FormClient$$Lambda$696/0x0000000800c6a840@4bdce986 | extractor: com.axelor.auth.pac4j.local.JsonExtractor@18ee4a1e | authenticator: com.axelor.auth.pac4j.local.AxelorAuthenticator@3f01c1dd | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-4] o.p.c.c.f.DefaultSecurityClientFinder    : result: [AxelorFormClient]
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-3] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: /index.html | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: org.pac4j.http.client.indirect.FormClient$$Lambda$696/0x0000000800c6a840@4bdce986 | extractor: com.axelor.auth.pac4j.local.JsonExtractor@18ee4a1e | authenticator: com.axelor.auth.pac4j.local.AxelorAuthenticator@3f01c1dd | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-3] o.p.c.c.f.DefaultSecurityClientFinder    : result: [AxelorFormClient]
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-4] o.p.jee.context.session.JEESessionStore  : Get value: {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |} for key: pac4jUserProfiles
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-3] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-4] org.pac4j.core.profile.ProfileManager    : Retrieved profiles (session): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:29.787 DEBUG 158451 --- [nio-8080-exec-3] o.p.jee.context.session.JEESessionStore  : Get value: 39f074413d874ada99917cdb6a71e116 for key: pac4jCsrfToken
+2025-06-18 00:48:29.788 DEBUG 158451 --- [nio-8080-exec-3] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.788 DEBUG 158451 --- [nio-8080-exec-3] o.p.jee.context.session.JEESessionStore  : Get value: {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |} for key: pac4jUserProfiles
+2025-06-18 00:48:29.788 DEBUG 158451 --- [nio-8080-exec-3] org.pac4j.core.profile.ProfileManager    : Retrieved profiles (session): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:29.788 DEBUG 158451 --- [nio-8080-exec-3] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.788 DEBUG 158451 --- [nio-8080-exec-3] o.p.jee.context.session.JEESessionStore  : Get value: 39f074413d874ada99917cdb6a71e116 for key: pac4jCsrfToken
+2025-06-18 00:48:29.789 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /meta/view
+2025-06-18 00:48:29.789 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /meta/fields/com.eduflow.common.geo.db.Provincia
+2025-06-18 00:48:29.790 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerReaderInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.790 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyReader: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.790 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyReader: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.790 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : readFrom
+2025-06-18 00:48:29.792 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+grid-provincias
+2025-06-18 00:48:29.793 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.793 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.795 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.796 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.798 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.800 DEBUG 158451 --- [nio-8080-exec-4] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.805 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.806 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-4] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2025-06-18 00:48:29.812 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] o.p.c.c.f.DefaultSecurityClientFinder    : Provided clientNames: AxelorFormClient
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] o.p.c.c.f.DefaultSecurityClientFinder    : clientNameOnRequest: Optional.empty
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: /index.html | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: org.pac4j.http.client.indirect.FormClient$$Lambda$696/0x0000000800c6a840@4bdce986 | extractor: com.axelor.auth.pac4j.local.JsonExtractor@18ee4a1e | authenticator: com.axelor.auth.pac4j.local.AxelorAuthenticator@3f01c1dd | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] o.p.c.c.f.DefaultSecurityClientFinder    : result: [AxelorFormClient]
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] o.p.jee.context.session.JEESessionStore  : Get value: 39f074413d874ada99917cdb6a71e116 for key: pac4jCsrfToken
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] o.p.jee.context.session.JEESessionStore  : Get value: {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |} for key: pac4jUserProfiles
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] org.pac4j.core.profile.ProfileManager    : Retrieved profiles (session): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.822 DEBUG 158451 --- [nio-8080-exec-8] o.p.jee.context.session.JEESessionStore  : Get value: 39f074413d874ada99917cdb6a71e116 for key: pac4jCsrfToken
+2025-06-18 00:48:29.824 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /action/com.axelor.meta.web.MetaFilterController:findFilters
+2025-06-18 00:48:29.824 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerReaderInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.824 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.824 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyReader: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.824 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyReader: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.824 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : readFrom
+2025-06-18 00:48:29.825 DEBUG 158451 --- [nio-8080-exec-8] c.a.meta.schema.actions.ActionGroup      : action: com.axelor.meta.web.MetaFilterController:findFilters
+2025-06-18 00:48:29.830 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.831 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.832 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.833 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.835 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.835 DEBUG 158451 --- [nio-8080-exec-8] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@3428aaff due to dirty commit state on close().
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.836 DEBUG 158451 --- [nio-8080-exec-8] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2025-06-18 00:48:29.837 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.839 DEBUG 158451 --- [nio-8080-exec-3] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2025-06-18 00:48:29.856 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.857 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.858 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.858 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.879 DEBUG 158451 --- [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.968 DEBUG 158451 --- [nio-8080-exec-1] o.p.c.c.f.DefaultSecurityClientFinder    : Provided clientNames: AxelorFormClient
+2025-06-18 00:48:29.968 DEBUG 158451 --- [nio-8080-exec-1] o.p.c.c.f.DefaultSecurityClientFinder    : clientNameOnRequest: Optional.empty
+2025-06-18 00:48:29.969 DEBUG 158451 --- [nio-8080-exec-1] org.pac4j.core.client.Clients            : Found client: #AxelorFormClient# | callbackUrl: /callback | name: AxelorFormClient | loginUrl: /index.html | usernameParameter: username | passwordParameter: password | redirectionActionBuilder: org.pac4j.http.client.indirect.FormClient$$Lambda$696/0x0000000800c6a840@4bdce986 | extractor: com.axelor.auth.pac4j.local.JsonExtractor@18ee4a1e | authenticator: com.axelor.auth.pac4j.local.AxelorAuthenticator@3f01c1dd | profileCreator: org.pac4j.core.profile.creator.AuthenticatorProfileCreator@c03b0ec | for name: AxelorFormClient
+2025-06-18 00:48:29.969 DEBUG 158451 --- [nio-8080-exec-1] o.p.c.c.f.DefaultSecurityClientFinder    : result: [AxelorFormClient]
+2025-06-18 00:48:29.969 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.969 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Get value: 39f074413d874ada99917cdb6a71e116 for key: pac4jCsrfToken
+2025-06-18 00:48:29.969 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.969 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Get value: {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |} for key: pac4jUserProfiles
+2025-06-18 00:48:29.969 DEBUG 158451 --- [nio-8080-exec-1] org.pac4j.core.profile.ProfileManager    : Retrieved profiles (session): {AxelorFormClient=#CommonProfile# | id: demo | attributes: {username=demo} | authenticationAttributes: {} | roles: [] | permissions: [] | isRemembered: false | clientName: AxelorFormClient | linkedId: null |}
+2025-06-18 00:48:29.969 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : createSession: false, retrieved session: org.apache.catalina.session.StandardSessionFacade@458f52f3
+2025-06-18 00:48:29.969 DEBUG 158451 --- [nio-8080-exec-1] o.p.jee.context.session.JEESessionStore  : Get value: 39f074413d874ada99917cdb6a71e116 for key: pac4jCsrfToken
+2025-06-18 00:48:29.970 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : RESTEASY002315: PathInfo: /rest/com.eduflow.common.geo.db.Provincia/search
+2025-06-18 00:48:29.971 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerReaderInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.971 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyReader: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.971 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyReader: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.971 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : readFrom
+2025-06-18 00:48:29.977 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.977 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.978 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.979 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.981 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.982 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.982 DEBUG 158451 --- [nio-8080-exec-1] com.axelor.rpc.Resource                  : Searching 'com.eduflow.common.geo.db.Provincia'
+2025-06-18 00:48:29.989 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.990 DEBUG 158451 --- [nio-8080-exec-1] com.axelor.rpc.Resource                  : JPQL: SELECT new List(self.id, self.version, self.idProvincia, self.descripcion, self.estado) FROM Provincia self WHERE (self.archived is null OR self.archived = false) ORDER BY self.id DESC
+2025-06-18 00:48:29.992 DEBUG 158451 --- [nio-8080-exec-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:29.993 DEBUG 158451 --- [nio-8080-exec-1] com.axelor.rpc.Resource                  : Records found: 2
+2025-06-18 00:48:29.995 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.996 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.996 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.996 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.996 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.996 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : WriterInterceptor: com.axelor.rpc.RequestFilter
+2025-06-18 00:48:29.996 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : Interceptor Context: org.jboss.resteasy.core.interception.jaxrs.ServerWriterInterceptorContext,  Method : proceed
+2025-06-18 00:48:29.996 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.core.providerfactory.SortedKey
+2025-06-18 00:48:29.996 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : MessageBodyWriter: org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider
+2025-06-18 00:48:29.996 DEBUG 158451 --- [nio-8080-exec-1] org.jboss.resteasy.resteasy_jaxrs.i18n   : Provider : org.jboss.resteasy.plugins.providers.jackson.ResteasyJackson2Provider,  Method : writeTo
+2025-06-18 00:48:39.071 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:39.072 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:39.073 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:39.074 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().
+2025-06-18 00:48:39.075 DEBUG 158451 --- [nio-8080-exec-9] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Executed rollback on connection org.postgresql.jdbc.PgConnection@568ff30 due to dirty commit state on close().

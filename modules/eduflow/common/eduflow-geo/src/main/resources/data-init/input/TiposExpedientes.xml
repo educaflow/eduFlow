@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <datos>
     <tiposExpedientes>
-        <tipoExpediente code="ExpedienteFaltaJustificada" name="Falta Justificada" versionExpediente="1" fqcnEventManager="com.eduflow.modules.geo.ExpedienteFaltaJustificadaEventManager">Valencia</tipoExpediente>
-        <tipoExpediente code="ComisionServicio" name="Comision de servicios" versionExpediente="1" fqcnEventManager="com.eduflow.modules.geo.ComisionServicioEventManager">Castellón</tipoExpediente>
+        <tipoExpediente code="ExpedienteFaltaJustificada" name="Falta Justificada" versionExpediente="1" fqcnEventManager="com.eduflow.modules.expedientes.FaltaJustificadaEventManager">Valencia</tipoExpediente>
+        <tipoExpediente code="ComisionServicio" name="Comision de servicios" versionExpediente="1" fqcnEventManager="com.eduflow.modules.expedientes.ComisionServicioEventManager">Castellón</tipoExpediente>
     </tiposExpedientes>
 </datos>
